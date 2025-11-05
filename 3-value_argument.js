@@ -1,11 +1,7 @@
-const argFunc = function (argument) {
-  if (!argument) {
-    console.log('No argument');
-  } else {
-    console.log(argument);
-  }
-};
+const argument = process.argv[2];
 
-argFunc('HBTN');
-argFunc();
-argFunc('HBTN cool');
+if (!argument) {
+  console.log('No argument');
+} else {
+  console.log(argument);
+}
