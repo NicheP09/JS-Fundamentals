@@ -1,7 +1,11 @@
-const argFunc = function (print = 'No argument') {
-  console.log(print);
+const argFunc = function (argument) {
+  if (!argument) {
+    console.log('No argument');
+  } else {
+    console.log(argument);
+  }
 };
 
-argFunc('one argument "HBTN"');
+argFunc('HBTN');
 argFunc();
-argFunc('2 arguments: "HBTN cool"');
+argFunc('HBTN cool');
